@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes importadas*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+
+@media screen and (min-width: 768px) {
+    body {
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        margin: auto;
+        padding: auto;
+    }
+}
+
+/* Modo Oscuro */
+.contenedorModoNoche {
+position: absolute;
+zoom: 15%;
+margin: 40px;
+padding: 40px;
+right: 20%;
+}
+
+.contenedorModoNoche :hover{
+    cursor: pointer;
+}
+
+.dark {
+background-color: #333;
+color: white;
+transition: all 0.5s ease;
+}
+
+/* Imágenes de fondo */
+ /* .fondo1 {
+position: absolute;
+height: 78.5%;
+width: 20%;
+background-image: url(https://st2.depositphotos.com/7507618/12045/v/450/depositphotos_120454410-stock-illustration-pokeball-seamless-pattern.jpg);
+background-repeat: repeat;
+background-size: cover;
+} */
+
+/* .fondo2 {
+position: absolute;
+height: 78.5%;
+width: 20%;
+left: 80%;
+background-image: url(https://i.postimg.cc/zGvc2387/background-pkmn1.png);
+transform: rotate(-180deg);
+background-size: cover;
+} */
+
+/* Estilos del header */
+header {
+background-color: rgba(186, 12, 12, 0.856);
+}
+
+header img {
+max-width: 100%;
+height: auto;
+display: block;
+margin: 0 auto;
+width: 200px;
+}
+
+#titulo{
+width: 300px;
+padding: 10px;
+cursor: pointer;
+}
+
+
+/* "Busca el Pokémon que quieras aquí */
+#buscalo{
+text-align: center;
+padding: 20px;
+font-family: 'Roboto', sans-serif;
+font-size: 18px;
+}
+
+/* Aplicar estilos al contenedor del buscador */
+.container_buscador {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Aplicar estilos al input de búsqueda */
+#nombrePokemon {
+    padding: 10px;
+    width: 500px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+}
+
+/* Aplicar estilos a la imagen de búsqueda */
+#pokemonSearch {
+    margin-top: 8px;
+    margin-left: -40px;
+    width: 50px; 
+    height: 50px;
+}
+
+.container_buscador input:hover{
+    background-color: #333;
+    color: white;
+}
+
+::placeholder {
+    color: #ccc;
+}
+
+/* Información de los Pokémon */
+/* #buscador {
+  align-self: flex-end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 150px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  letter-spacing: 0.05rem;
+  line-height: 1.5rem;
+} */
+
+#buscador{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 500px;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    letter-spacing: 0.05rem;
+    line-height: 1.5rem;
+}
+
+    .ficha{
+        height: 450px;
+        border-radius: 2%;
+        width: 250px;
+        color: #000;
+        background-color: rgba(128, 128, 128, 0.5);
+        border: 1px solid black;
+        box-shadow: #6a6a6a 0px 0px 10px;
+        text-align: center;
+        padding: 10px;
+        margin: 50px 20px 0px 20px;
+        gap: 20px;
+        align-self: center;
+    }
+.ficha h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color: black;
+}
+
+.ficha h3{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+.ficha p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    line-height: 30px;
+}
+
+footer{
+position: fixed;
+left: 0;
+bottom: 0;
+padding: 5px;
+width: 100%;
+font-family: 'Lato', sans-serif;
+font-size: 15px; text-align: center; 
+color: whitesmoke;
+background-color: rgba(186, 12, 12, 0.856);
+}

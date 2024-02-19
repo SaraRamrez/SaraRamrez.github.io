@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Proyecto Pokédex</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="icon" type="image/x-icon"
+    href="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Poké_Ball_icon.svg/2052px-Poké_Ball_icon.svg.png">
+</head>
+<body class="bright">
+
+    <header id="encabezado">
+        <h1><img src="https://i.postimg.cc/dt16wXpt/title.png" alt="pokedex titulo" srcset="" id="titulo"></h1>
+    </header>
+
+    <div class="fondo1"></div>
+    <div class="fondo2"></div>
+    <div class="fondoCentral"></div>
+
+    <div class="contenedorModoNoche">
+        <label for="toggle" id="label_toggle">
+            <img src="https://i.postimg.cc/CLHb0GH7/dark-mode2.png" alt="umbreon" id="umbreonImg"><i class="umbreonDark">
+        </label>
+        <input type="checkbox" id="toggle">
+        <div class="contenedor"></div>
+    </div>
+    <!-- <img src="https://i.postimg.cc/jdVHZHXH/recuadros-pkmn1.png" alt="cuadro" id="recuadro"> -->
+
+    <main>
+
+    <h2 id="buscalo">Busca el Pokémon que quieras aquí</h2>
+
+        <section id="elBuscador">
+            <div class="container_buscador">
+                <input type="search" id="nombrePokemon" placeholder="Buscar nombre del Pokémon o número...">
+                <img src="https://i.postimg.cc/gcvF3w26/pokeball-search.png" alt="pokeball-search" id="pokemonSearch">
+            </div>
+        </section>
+
+        <section id="buscador">
+                <!-- Aquí se imprime toda la información de los Pokémon sacada de la API -->
+        </section>
+
+    </main>
+
+    <footer id="footer"> 
+        Pokédex es un proyecto de Hack a Boss realizado por el grupo D compuesto por Jose, Sara, María y Fernando. © 2024 Hack a Boss. Todos los derechos reservados. 
+    </footer>
+    
+    <script src="./js/script.js"></script>
+</body>
+</html>
